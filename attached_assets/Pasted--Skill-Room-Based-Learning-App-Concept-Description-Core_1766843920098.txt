@@ -1,0 +1,201 @@
+# Skill Room Based Learning App – Concept Description
+
+## Core Idea
+
+The application is designed as a **virtual room-based learning space** where a user can explore, plan, and execute their learning journey in an interactive and structured way. The focus is on **exploration, choice, and personalization**, rather than forced or predefined learning paths.
+
+---
+
+## User Entry & Exploration
+
+When a user logs in, they enter **their personal room**. This room acts as the main space from where they can explore different learning options and functionalities.
+
+The room contains **multiple gates**, and each gate represents a learning stream or domain. The user is free to explore and choose the gates they are interested in.
+
+The available gate options include multiple **rooms (modules)** designed specifically for an engineering student. These rooms represent different learning and preparation areas that an engineering student commonly needs.
+
+Examples of available rooms include:
+
+* AI / ML
+* Data Scientist
+* Cloud
+* Project Manager
+* Aptitude
+* Data Structures & Algorithms
+* Core Programming (C / C++ / Python / Java)
+* Web Development
+* Core Subjects (OS, DBMS, CN, COA)
+* System Design (Basics)
+* Placement Preparation
+* Internship / Project Work
+
+Users can select one or multiple rooms based on their academic and career requirements.
+
+The user can choose one or multiple gates based on their interests.
+
+---
+
+## Gates & Learning Streams
+
+Each selected gate opens into its own dedicated space. Inside every gate, the learning process is organized using **cupboards**.
+
+There are **predefined gates available by default**, which already contain structured pathways. These pathways clearly define what topic should be done first and what should be done next, in a sequential manner.
+
+Users also have the option to **generate their own gates** according to their personal learning requirements.
+
+Inside every gate, cupboards represent **step-by-step learning components** within that specific stream. These cupboards are shown as **checkbox-based structures**, allowing the user to track what they are supposed to do in a clear and ordered way.
+
+Each cupboard contains:
+
+* Tasks related to that stream
+* A step-wise structure
+* Checkboxes to mark completion
+
+This helps users understand what needs to be done next and how their learning is progressing.
+
+---
+
+## Personalized Folder Gate (AI-Based)
+
+In addition to predefined cupboards, the app allows users to create a **personalized folder gate** using AI.
+
+Through this feature, the user can define:
+
+* How they want to learn
+* The order in which they want to study
+* Their personal preferences and pace
+
+Based on this input, the AI generates a **custom folder gate** specifically tailored to the user’s learning style and goals.
+
+---
+
+## Certifications, Internships, and Projects Inside Rooms
+
+Each room (module) contains its own **Certification, Internship, and Project folders**.
+
+Inside every room, users can:
+
+* Mark certifications related specifically to that room
+* Track internships associated with that domain
+* Track projects completed within that room
+
+This helps users clearly understand **what they have gained from a particular room**, rather than maintaining everything in a single generic place.
+
+All certifications, internships, and projects are therefore **room-specific**, ensuring clarity and proper categorization of achievements.
+
+---
+
+## Central Overview Section (Auto-Generated)
+
+On the dashboard, there is a dedicated **overview section** whose name can be **customized by the user**.
+
+This section provides a complete summary of the user’s profile, including:
+
+* Total certifications completed
+* Number of internships done
+* Number of projects completed
+* Work or experience-related progress
+
+This overview section is **automatically generated and updated by the application**.
+
+Whenever the user adds or updates information inside any room (certifications, internships, projects, or tasks), the system automatically reflects those changes in this section.
+
+There is **no manual user interaction required** to update this overview. It acts as a consolidated view of the user’s overall progress and achievements across all rooms.
+
+---
+
+## Scheduling & Planning
+
+The scheduling system supports **multiple modules at the same time**.
+
+When a user selects more than one module (gate/room), each selected module **appears in the schedule by its module name** (for example: AI/ML, Cloud, Data Scientist).
+
+The schedule does not directly list individual tasks first; instead, it shows **module-level entries**. Each module entry represents the corresponding room or folder selected by the user.
+
+When the user opens a module from the schedule:
+
+* The system displays **marked (completed) and unmarked (pending) tasks** inside that module
+* Unmarked tasks are highlighted to guide what needs to be done next
+* Progress inside the module determines movement to the next steps
+
+This allows users to manage multiple learning modules in parallel while maintaining clarity on what is completed and what still needs attention.
+
+The scheduling system works together with task completion tracking to keep learning structured and continuous.
+
+---
+
+## Purpose
+
+The purpose of this application is to provide:
+
+* A structured yet flexible learning environment
+* Visual clarity through rooms, gates, and cupboards
+* Personal control over learning paths
+* Support for planning, tracking, and execution
+
+The app is designed to feel intuitive, exploratory, and personalized, allowing users to learn in the way they prefer.
+
+---
+
+## User Interface Flow
+
+### Login / Entry Screen
+
+The first screen of the application is a **login interface**. Users can log in or sign up to access their personal learning space.
+
+---
+
+### User Dashboard (Personal Assistant View)
+
+After logging in, the user is taken to their **dashboard**, which acts as a personal assistant interface.
+
+This dashboard represents the user’s main room and provides an overview of:
+
+* Selected gates (learning streams)
+* Current tasks and schedules
+* Upcoming deadlines
+
+---
+
+## Voice-Based Personal Assistant
+
+The application works like a **personal assistant**, allowing users to interact using their **voice through a microphone**.
+
+Users can speak natural commands such as:
+
+* Submitting project deadlines
+* Asking to schedule tasks
+* Mentioning specific days or times
+
+Example interaction:
+A user can say that they need to submit a project before a certain day and ask the system to schedule it at a specific time.
+
+---
+
+## Smart Scheduling via Voice
+
+Based on the user’s voice input:
+
+* The system understands the task
+* Extracts the deadline and preferred time
+* Automatically updates the user’s schedule
+
+Once processed, the **entire schedule is updated** and reflected on the dashboard.
+
+---
+
+## Dashboard Updates
+
+After scheduling through voice input:
+
+* Tasks appear in the daily plan
+* Deadlines are clearly visible
+* The user can track upcoming responsibilities
+
+If a task is **not marked as completed on the assigned day**, the system automatically **reschedules it to the next available day** according to the existing schedule.
+
+The system also considers the user’s **free time** while rescheduling tasks and sends **notifications** accordingly.
+
+This ensures that unfinished tasks are not missed and the user remains aware of their responsibilities without manual re-planning.
+
+The dashboard acts as a central place where users can view, manage, and stay notified about their tasks, schedules, and learning progress.
