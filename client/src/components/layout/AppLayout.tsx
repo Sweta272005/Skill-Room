@@ -1,9 +1,18 @@
 import { Link, useLocation } from "wouter";
-import { Layout, Home, BarChart3, Settings, LogOut, User } from "lucide-react";
+import { Layout, Home, BarChart3, Settings, LogOut, User, Moon, Sun } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export function AppLayout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  // Prevent hydration mismatch
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const navItems = [
     { icon: Home, label: "My Room", href: "/" },
@@ -46,7 +55,28 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
           ))}
         </nav>
 
-        <div className="p-4 border-t border-sidebar-border">
+        <div className="p-4 border-t border-sidebar-border space-y-3">
+          {/* Dark Mode Toggle */}
+          {mounted && (
+            <button
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              className="w-full flex items-center gap-3 px-4 py-3 rounded-xl bg-sidebar-accent/50 border border-sidebar-border hover:bg-sidebar-accent transition-all"
+            >
+              {theme === "dark" ? (
+                <>
+                  <Sun className="w-4 h-4 text-yellow-500" />
+                  <span className="text-sm font-medium">Light Mode</span>
+                </>
+              ) : (
+                <>
+                  <Moon className="w-4 h-4 text-blue-500" />
+                  <span className="text-sm font-medium">Dark Mode</span>
+                </>
+              )}
+            </button>
+          )}
+
+          {/* User Profile */}
           <div className="flex items-center gap-3 px-4 py-3 rounded-xl bg-sidebar-accent/50 border border-sidebar-border">
             <div className="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400 flex items-center justify-center text-white text-xs font-bold">
               JD

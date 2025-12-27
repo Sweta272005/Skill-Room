@@ -1,14 +1,20 @@
 import { AppLayout } from "@/components/layout/AppLayout";
 import { GateCard } from "@/components/ui/GateCard";
 import { VoiceAssistant } from "@/components/ui/VoiceAssistant";
+import { TodaysTasksModal } from "@/components/ui/TodaysTasksModal";
 import { GATES } from "@/lib/mockData";
 import { Plus } from "lucide-react";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import generatedImage from '@assets/generated_images/cozy_futuristic_digital_study_room_background.png';
 
 export default function Home() {
+  const [showTasksModal, setShowTasksModal] = useState(true);
+
   return (
     <AppLayout>
+      <TodaysTasksModal isOpen={showTasksModal} onClose={() => setShowTasksModal(false)} />
+      
       <div className="relative min-h-full pb-20">
         {/* Hero / Room Visual */}
         <div className="relative w-full h-80 md:h-96 overflow-hidden">
