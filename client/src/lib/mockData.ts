@@ -1,4 +1,23 @@
-import { LucideIcon, Brain, Database, Cloud, Code, Briefcase, FileText, CheckCircle, Clock, Calendar, BarChart3, Mic, Layers, Settings, BookOpen, GraduationCap, Layout, Cpu } from "lucide-react";
+import {
+  LucideIcon,
+  Brain,
+  Database,
+  Cloud,
+  Code,
+  Briefcase,
+  FileText,
+  CheckCircle,
+  Clock,
+  Calendar,
+  BarChart3,
+  Mic,
+  Layers,
+  Settings,
+  BookOpen,
+  GraduationCap,
+  Layout,
+  Cpu,
+} from "lucide-react";
 
 export interface Task {
   id: string;
@@ -32,7 +51,8 @@ export const GATES: Gate[] = [
     id: "ai-ml",
     title: "AI / ML",
     icon: Brain,
-    description: "Master Artificial Intelligence and Machine Learning algorithms.",
+    description:
+      "Master Artificial Intelligence and Machine Learning algorithms.",
     color: "text-purple-500 bg-purple-500/10 border-purple-200",
     progress: 45,
     certifications: 2,
@@ -46,8 +66,12 @@ export const GATES: Gate[] = [
         tasks: [
           { id: "t1", title: "Complete Python Basics", completed: true },
           { id: "t2", title: "Master NumPy Arrays", completed: true },
-          { id: "t3", title: "Pandas DataFrames Manipulation", completed: false },
-        ]
+          {
+            id: "t3",
+            title: "Pandas DataFrames Manipulation",
+            completed: false,
+          },
+        ],
       },
       {
         id: "c2",
@@ -56,9 +80,9 @@ export const GATES: Gate[] = [
         tasks: [
           { id: "t4", title: "Linear Regression", completed: false },
           { id: "t5", title: "Decision Trees", completed: false },
-        ]
-      }
-    ]
+        ],
+      },
+    ],
   },
   {
     id: "web-dev",
@@ -79,9 +103,9 @@ export const GATES: Gate[] = [
           { id: "t6", title: "React Hooks Deep Dive", completed: true },
           { id: "t7", title: "Tailwind CSS Architecture", completed: true },
           { id: "t8", title: "Redux Toolkit", completed: true },
-        ]
-      }
-    ]
+        ],
+      },
+    ],
   },
   {
     id: "cloud",
@@ -101,9 +125,9 @@ export const GATES: Gate[] = [
         tasks: [
           { id: "t9", title: "Create EC2 Instance", completed: false },
           { id: "t10", title: "Configure S3 Bucket", completed: false },
-        ]
-      }
-    ]
+        ],
+      },
+    ],
   },
   {
     id: "data-science",
@@ -115,7 +139,7 @@ export const GATES: Gate[] = [
     certifications: 0,
     internships: 0,
     projects: 1,
-    cupboards: []
+    cupboards: [],
   },
   {
     id: "sys-design",
@@ -127,7 +151,7 @@ export const GATES: Gate[] = [
     certifications: 0,
     internships: 0,
     projects: 0,
-    cupboards: []
+    cupboards: [],
   },
   {
     id: "core-cs",
@@ -139,6 +163,6 @@ export const GATES: Gate[] = [
     certifications: 0,
     internships: 0,
     projects: 0,
-    cupboards: []
-  }
+    cupboards: [],
+  },
 ];
